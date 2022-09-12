@@ -31,8 +31,6 @@ QMAKE_LFLAGS += -no-pie
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-INCLUDEPATH += /home/emjay/opencv/OpenCV454_gcc_x64/include \
-               /home/emjay/opencv/OpenCV454_gcc_x64/include/opencv4 \
-               /home/emjay/opencv/OpenCV454_gcc_x64/include/opencv4/opencv2
+INCLUDEPATH += #[!]YOUR OPENCV INCLUDE PATH
 
-LIBS += /home/emjay/opencv/OpenCV454_gcc_x64/lib/libopencv_world.so
+LIBS += #[!]YOUR OPENCVLIB PATH
