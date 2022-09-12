@@ -252,7 +252,7 @@ void TabWidget::setImgDir(){
 void TabWidget::loadFile(){
     QString path = QFileDialog::getOpenFileName(this,
                                                 "Open Images or Videos",
-                                                "/home/emjay/proj",
+                                                "./",
                                                 "Images(*.png *.jpg *.jpeg)");
     ui->fdfLE->setText(path);
     if(path.isEmpty()){
@@ -276,7 +276,7 @@ void TabWidget::loadFile(){
 void TabWidget::loadNet(){
     QString path = QFileDialog::getOpenFileName(this,
                                                 "Open Net",
-                                                "/home/emjay/proj",
+                                                "./",
                                                 "TFNN(*.pb)");
     ui->fdnLE->setText(path);
     if(path.isEmpty()){
